@@ -249,25 +249,25 @@
                     <ImageView
                         android:layout_width="match_parent"
                         android:layout_height="280dp"
-                        android:src="@drawable/graphic"
+                        android:src="@drawable/chart"
                         />
 
                     <ImageView
                         android:layout_width="match_parent"
                         android:layout_height="280dp"
-                        android:src="@drawable/graphic"
+                        android:src="@drawable/chart"
                         />
 
                     <ImageView
                         android:layout_width="match_parent"
                         android:layout_height="280dp"
-                        android:src="@drawable/graphic"
+                        android:src="@drawable/chart"
                         />
 
                     <ImageView
                         android:layout_width="match_parent"
                         android:layout_height="280dp"
-                        android:src="@drawable/graphic"
+                        android:src="@drawable/chart"
                         />
 
                 </LinearLayout>
