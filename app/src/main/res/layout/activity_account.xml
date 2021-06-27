@@ -198,8 +198,9 @@
                                 android:layout_weight="0.9"
                                 android:progress="45"
                                 android:scaleY="2.5"
-                                app:trackCornerRadius="1dp"
-                                app:trackThickness="10dp" />
+                                app:trackCornerRadius="2dp"
+                                app:trackThickness="10dp"
+                                app:trackColor="#F6F6F6"/>
 
                             <TextView
                                 android:layout_width="wrap_content"
