@@ -8,6 +8,7 @@
     tools:context=".AccountActivity">
 
     <ScrollView
+        android:id="@+id/scrollView3"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:fillViewport="true"
@@ -32,23 +33,24 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
+                    android:gravity="center"
                     android:orientation="horizontal"
                     android:padding="35dp"
-                    android:gravity="center"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent">
 
                     <LinearLayout
                         android:layout_width="0dp"
-                        android:layout_weight="0.9"
                         android:layout_height="wrap_content"
-                        android:orientation="horizontal"
-                        android:gravity="center">
+                        android:layout_weight="0.9"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
                         <ImageView
                             android:layout_width="140dp"
                             android:layout_height="140dp"
-                            android:src="@drawable/avatar"/>
+                            android:src="@drawable/avatar" />
 
                         <LinearLayout
                             android:layout_width="match_parent"
@@ -58,36 +60,36 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="match_parent"
-                                android:text="Welcome back,"
-                                android:textSize="17dp"
                                 android:fontFamily="@font/soinsansneu_roman"
-                                android:textColor="@color/white"/>
+                                android:text="Welcome back,"
+                                android:textColor="@color/white"
+                                android:textSize="17dp" />
 
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="match_parent"
-                                android:text="Julie Bell"
-                                android:textSize="24dp"
                                 android:fontFamily="@font/soinsansneue_heavy"
-                                android:textColor="@color/white"/>
+                                android:text="Julie Bell"
+                                android:textColor="@color/white"
+                                android:textSize="24dp" />
 
                         </LinearLayout>
 
                     </LinearLayout>
+
                     <LinearLayout
                         android:layout_width="0dp"
-                        android:layout_weight="0.1"
                         android:layout_height="match_parent"
-                        android:orientation="vertical"
-                        android:gravity="top">
+                        android:layout_weight="0.1"
+                        android:gravity="top"
+                        android:orientation="vertical">
 
                         <ImageView
                             android:layout_width="35dp"
                             android:layout_height="35dp"
-                            android:src="@drawable/ic_baseline_notifications_none_24"/>
+                            android:src="@drawable/ic_baseline_notifications_none_24" />
 
                     </LinearLayout>
-
 
 
                 </LinearLayout>
@@ -96,7 +98,7 @@
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="0dp"
                 android:background="@drawable/radius"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/constraintLayout">
@@ -104,62 +106,67 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
+                    android:orientation="vertical"
                     android:padding="36dp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    android:orientation="vertical">
+                    app:layout_constraintTop_toTopOf="parent">
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:orientation="horizontal"
-                        android:gravity="center">
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
                         <LinearLayout
                             android:layout_width="0dp"
-                            android:layout_weight="1"
                             android:layout_height="match_parent"
-                            android:orientation="vertical"
-                            android:gravity="center">
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:textSize="28dp"
-                                android:textStyle="bold"
-                                android:textColor="@color/black"
-                                android:fontFamily="@font/soinsansneue_black"
-                                android:text="$12,095"/>
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="Overdue"
-                                android:textSize="17dp"
-                                android:fontFamily="@font/soinsansneue_medium"
-                                android:textColor="@color/grey"/>
-                        </LinearLayout>
-                        <LinearLayout
-                            android:layout_width="0dp"
                             android:layout_weight="1"
-                            android:layout_height="match_parent"
-                            android:orientation="vertical"
-                            android:gravity="center">
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:textSize="28dp"
-                                android:textStyle="bold"
-                                android:textColor="@color/black"
-                                android:fontFamily="@font/soinsansneue_black"
-                                android:text="$33,363"/>
+                            android:gravity="center"
+                            android:orientation="vertical">
 
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="Outstanding"
-                                android:textSize="17dp"
+                                android:fontFamily="@font/soinsansneue_black"
+                                android:text="$12,095"
+                                android:textColor="@color/black"
+                                android:textSize="28dp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
                                 android:fontFamily="@font/soinsansneue_medium"
-                                android:textColor="@color/grey"/>
+                                android:text="Overdue"
+                                android:textColor="@color/grey"
+                                android:textSize="17dp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/soinsansneue_black"
+                                android:text="$33,363"
+                                android:textColor="@color/black"
+                                android:textSize="28dp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/soinsansneue_medium"
+                                android:text="Outstanding"
+                                android:textColor="@color/grey"
+                                android:textSize="17dp" />
                         </LinearLayout>
                     </LinearLayout>
 
@@ -167,41 +174,43 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="21dp"
+                        android:fontFamily="@font/soinsansneue_medium"
                         android:text="Outstanding revenue"
-                        android:textSize="17dp"
                         android:textColor="@color/black"
-                        android:fontFamily="@font/soinsansneue_medium"/>
+                        android:textSize="17dp" />
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="13dp"
-                        android:orientation="horizontal"
-                        android:gravity="left">
+                        android:gravity="left"
+                        android:orientation="horizontal">
 
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:orientation="horizontal"
-                            android:gravity="center">
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
                             <com.google.android.material.progressindicator.LinearProgressIndicator
                                 android:layout_width="0dp"
                                 android:layout_height="100dp"
                                 android:layout_marginRight="6dp"
                                 android:layout_weight="0.9"
-                                android:progress="40"
-                                android:scaleY="4"
-                                app:trackCornerRadius="10dp"
+                                android:progress="45"
+                                android:scaleY="3"
+                                app:trackCornerRadius="1dp"
                                 app:trackThickness="10dp" />
+
                             <TextView
                                 android:layout_width="wrap_content"
-                                android:layout_weight="0.05"
-                                android:textAlignment="textEnd"
                                 android:layout_height="wrap_content"
+                                android:layout_weight="0.05"
+                                android:fontFamily="@font/soinsansneue_black"
                                 android:text="$21.3k"
-                                android:textSize="23dp"
+                                android:textAlignment="textEnd"
                                 android:textColor="@color/black"
-                                android:fontFamily="@font/soinsansneue_black"/>
+                                android:textSize="23dp" />
                         </LinearLayout>
                     </LinearLayout>
 
@@ -209,34 +218,37 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="13dp"
+                        android:fontFamily="@font/soinsansneue_medium"
                         android:text="$12,095 overdue"
-                        android:textColor="@color/grey"
-                        android:fontFamily="@font/soinsansneue_medium"/>
+                        android:textColor="@color/grey" />
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:orientation="horizontal"
                         android:layout_marginTop="21dp"
-                        android:gravity="bottom">
+                        android:gravity="bottom"
+                        android:orientation="horizontal">
+
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginRight="10dp"
+                            android:fontFamily="@font/soinsansneue_heavy"
                             android:text="Total profit"
                             android:textColor="@color/black"
-                            android:textStyle="bold"
                             android:textSize="25dp"
-                            android:fontFamily="@font/soinsansneue_heavy"/>
+                            android:textStyle="bold" />
+
                         <TextView
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
+                            android:fontFamily="@font/soinsansneue_medium"
                             android:text="Sep 2020"
                             android:textColor="@color/grey"
-                            android:textStyle="bold"
                             android:textSize="15dp"
-                            android:fontFamily="@font/soinsansneue_medium"/>
+                            android:textStyle="bold" />
+
                         <ImageView
                             android:layout_width="28dp"
                             android:layout_height="28dp"
@@ -249,33 +261,26 @@
                     <ImageView
                         android:layout_width="match_parent"
                         android:layout_height="280dp"
-                        android:src="@drawable/chart"
-                        />
-
-                    <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="280dp"
-                        android:src="@drawable/chart"
-                        />
-
-                    <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="280dp"
-                        android:src="@drawable/chart"
-                        />
-
-                    <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="280dp"
-                        android:src="@drawable/chart"
-                        />
+                        android:src="@drawable/chart" />
 
                 </LinearLayout>
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
-            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
     </ScrollView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        app:itemIconTint="@color/black"
+        app:labelVisibilityMode="unlabeled"
+        android:elevation="0dp"
+        app:layout_constraintBottom_toBottomOf="@+id/scrollView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/account_menu"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
